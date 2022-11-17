@@ -1,0 +1,14 @@
+
+<suite parallel="classes" name="Suite1">
+  <test thread-count="5" parallel="classes" name="Test1">
+    <classes>
+    	<class name="test.TestNG_Demo" />
+    	<class name="test.TestNG_Demo2"/>
+      		<methods>
+      		<!-- Can use Exclude instead to run all but specific ones -->
+      			<include name="googleSearch3"></include>
+      		</methods>
+      		
+    </classes>
+  </test> <!-- Test1 -->
+</suite> <!-- Suite1 -->
